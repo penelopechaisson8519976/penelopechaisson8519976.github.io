@@ -1,7 +1,4 @@
-const { createRef } = require("react");
-
-$(function () {
-  // initialize canvas and context when able to
+$(function () {  // initialize canvas and context when able to
   canvas = document.getElementById("canvas");
   ctx = canvas.getContext("2d");
   window.addEventListener("load", loadJson);
@@ -33,24 +30,31 @@ $(function () {
 
 
     // TODO 2 - Create Platforms
-createPlatform(400, 600, 200, 15)
-createPlatform(600, 300, 100, 20)
-createPlatform(200, 500, 150, 10)
-createPlatform(300, 400, 120, 17)
-createPlatform(700, 200, 250, 11)
+    createPlatform(200, 600, 100, 10)
+    createPlatform(400, 500, 300, 10)
+    createPlatform(100, 700, 100, 10)
+    createPlatform(800, 400, 200, 10)
+    createPlatform(800, 300, 200, 10)
+    createPlatform(1000, 500, 100, 10)
+    createPlatform(500, 200, 100, 10)
+    createPlatform(200, 300, 100, 10)
+    createPlatform(1200, 200, 100, 10)
 
 
 
     // TODO 3 - Create Collectables
+createCollectable("grace", 100, 300)
+createCollectable("grace", 1300, 200)
+createCollectable("grace", 500, 100)
 
-
-
-    
+   
     // TODO 4 - Create Cannons
+createCannon("left", 200, 800)
+createCannon("top", 1000, 900)
+createCannon("bottom", 400, 1000)
 
-
-    
-    
+   
+   
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
